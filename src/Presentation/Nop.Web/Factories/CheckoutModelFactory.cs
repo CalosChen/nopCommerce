@@ -266,7 +266,15 @@ namespace Nop.Web.Factories
                     address: address,
                     excludeProperties: false,
                     addressSettings: _addressSettings);
-                model.ExistingAddresses.Add(addressModel);
+
+                if (_addressService.IsAddressValid(address))
+                {
+                    model.ExistingAddresses.Add(addressModel);
+                }
+                else
+                {
+                    model.InvalidExistingAddresses.Add(addressModel);
+                }
             }
 
             //new address

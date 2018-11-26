@@ -240,7 +240,7 @@ set @resources='
     <Value>Allows to offer special prices when customers buy bigger amounts of a particular product. For example, when a customer could have two shopping cart items for the same products (different product attributes).</Value>
   </LocaleResource>
   <LocaleResource Name="Checkout.Addresses.Invalid">
-    <Value>Invalid addresses:</Value>
+    <Value>You have {0} invalid address(es)</Value>
   </LocaleResource>  
 </Language>
 '
